@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DimGrey"
+    android:backgroundTint="@color/black"
+    android:orientation="vertical"
+    tools:context=".AddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/Add_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="top"
+        android:text="ADD"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ServiceInpLO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Add_text"
+        android:layout_marginHorizontal="10dp"
+        android:textColorHint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ServiceInp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Service name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LoginInpLO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ServiceInpLO"
+        android:layout_marginHorizontal="10dp"
+        android:textColorHint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/LoginInp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Login or Email address"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PasswordInpLO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginInpLO"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/PasswordInp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/RandomizerCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PasswordInpLO"
+        android:layout_marginLeft="10dp"
+        android:buttonTint="@color/white"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/roboto_light"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:text="Generate a password"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/RandomizerLO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RandomizerCheck"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/PassLenText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Password length: 8"
+            android:textColor="@color/white" />
+
+        <SeekBar
+            android:id="@+id/PassLenBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:max="32"
+            android:min="8"
+            android:progress="8"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/symbolsChecker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:buttonTint="@color/white"
+            android:text="Use special symbols (!@#$%*)"
+            android:textColor="@color/white"
+            android:drawableTint="@color/white"/>
+
+        <Button
+            android:id="@+id/generate_pass"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="Generate!" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Addbutton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginVertical="60dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0"
+        android:text="Add" />
+
+
+</RelativeLayout>

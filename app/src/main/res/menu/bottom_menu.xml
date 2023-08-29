@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/password_menu"
+        android:icon="@drawable/key_24dp"
+        android:title="@string/passwords"
+        app:cnb_iconColor="@color/black"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/add_menu"
+        android:icon="@drawable/add_24dp"
+        android:title="@string/add"
+        app:cnb_iconColor="@color/black"/>
+
+    <item
+        android:id="@+id/settings_menu"
+        android:icon="@drawable/settings_24dp"
+        android:title="@string/settings"
+        app:cnb_iconColor="@color/black"/>
+
+</menu>

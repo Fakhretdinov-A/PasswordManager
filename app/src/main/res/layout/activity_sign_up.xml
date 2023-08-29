@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkGrey"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/password"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/manager"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationSignUp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/animation_llghred3"
+            app:lottie_speed="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/sign_up_and_start_using_your_password_manager_right_now"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/emailtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="#00A6DD"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passwordtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="#00A6DD"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/add_a_pin_code_that_you_will_use_to_access_the_manager"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pintext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:drawableStart="@drawable/baseline_fiber_pin_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="#00A6DD"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/pin"
+            android:inputType="numberPassword" />
+
+        <Button
+            android:id="@+id/signupbutton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00A6DD"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/sign_up" />
+    </LinearLayout>
+
+
+</LinearLayout>

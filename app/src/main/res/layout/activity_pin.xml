@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PinActivity"
+    android:background="@color/DarkGrey">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkGrey"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/DarkGrey">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:fontFamily="@font/roboto_bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/manager"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_marginTop="-10dp"/>
+    </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationSignUpinPIN"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/animation_llghred3"
+            app:lottie_speed="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:text="@string/enter_your_pin"
+            android:textSize="30sp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/white"/>
+
+
+        <EditText
+            android:id="@+id/pintext_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:drawableStart="@drawable/baseline_fiber_pin_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="#00A6DD"
+            android:ems="10"
+            android:hint="@string/pin"
+            android:inputType="numberPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="-6dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/DarkGrey"
+            android:text="@string/forgot_my_pin"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:gravity="top"/>
+
+
+        <Button
+            android:id="@+id/enterbutton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#00A6DD"
+            android:text="@string/enter" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

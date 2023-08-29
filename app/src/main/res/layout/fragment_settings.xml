@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DimGrey"
+    android:backgroundTint="@color/black"
+    android:orientation="vertical"
+    tools:context=".SettingsFragment">
+
+
+
+    <TextView
+        android:id="@+id/text_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="SETTINGS"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DimGrey" android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/button_profile"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+
+        android:drawableLeft="@drawable/profile_48dp"
+        android:drawableRight="@drawable/arrow_left"
+        android:drawableTint="#FFD126"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Profile"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:iconPadding="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DimGrey" />
+
+    <Button
+        android:id="@+id/button_security"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+
+        android:drawableLeft="@drawable/security"
+        android:drawableRight="@drawable/arrow_left"
+        android:drawableTint="#FF4040"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/security_and_data"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:iconPadding="20dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DimGrey" />
+
+    <Button
+        android:id="@+id/button_language"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:drawableLeft="@drawable/lang"
+        android:drawableRight="@drawable/arrow_left"
+        android:drawableTint="#3555FF"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/language"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:iconPadding="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DimGrey" />
+
+    <Button
+        android:id="@+id/button_about"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:drawableLeft="@drawable/about"
+        android:drawableRight="@drawable/arrow_left"
+        android:drawableTint="#25FF6E"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/about"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColorLink="#FF1212"
+        app:iconPadding="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DimGrey" />
+
+
+</LinearLayout>
